@@ -470,7 +470,7 @@ public class MainActivity extends Activity implements CameraBridgeViewBase.CvCam
 
         RequestQueue MyRequestQueue = Volley.newRequestQueue(this);
 
-        String url = "http://192.168.8.1:8000/upload.php?name=pi";
+        String url = "http://pixelplotter.home/upload.php?name=pi";
         StringRequest MyStringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
